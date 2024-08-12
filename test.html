@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <style>
+    *{
+      list-style: none;
+      margin:0;
+      font-family: 'Montserrat';
+
+    }
+    body{
+      background-color: #333;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container{
+      position: relative;
+      width: 700px;
+      height:600px;
+      background-color: #9c82820e ;
+      border:1px solid;
+      border-top: none;
+      border-right: none;
+      margin-top: 100px;
+      z-index: 0;
+    }
+    .v-meter{
+      position :relative;
+      top:0px;
+      left:-30px;
+      width:700px;
+      height: 500px;
+      z-index: 100;
+    }
+    .v-meter li{
+      position :relative;
+      
+      left:-11px;
+      
+      height: 100px;
+      border-bottom: solid 1px #1785a7;
+    }
+    .v-meter li::before{
+      content:'';
+      position: absolute;
+      top:-15px;
+      left:-30px;
+      
+      height: 100%;
+      border-bottom: solid 1px #1785a7;
+
+
+
+      tranform:skew(45deg);
+      width:30px;
+    }
+    .v-meter li div{
+      position :absolute;
+      font-size: 16px;
+      padding-top: 55px;
+      color:#fff;
+      text-align: right;
+      left:-115px;
+      width:80px;
+      
+  }
+    .bar{
+      width:50px;
+      background-color: #328036;
+      height: 32%;
+      position: absolute;
+      left:10%;
+      bottom:5px;
+      z-index:1000;
+      margin:0 40px;
+
+    }
+    .bar::after{
+      content:'';
+      width:50px;
+      position: absolute;
+      top:-20px;
+      left:-10px;
+      
+      height: 20px;
+      background-color: #328036;
+
+
+
+      tranform:skew(45deg);
+      
+
+    }
+    .bar::before{
+      content:'';
+      width:20px;
+      position: absolute;
+      top:-20px;
+      left:-10px;
+      
+      height: 100%;
+      background-color: #328036;
+      bottom:5px;
+
+
+
+      tranform:skew(45deg);}
+      .two{
+        left:25%;
+        height: 55%;
+      
+      }
+      .three{left:40%;
+        height:79%;
+      
+        
+      }
+      
+    
+
+
+
+    
+
+
+    
+    .btnl{
+    border: 2px solid rgb(10, 10, 15);
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+    background-color: transparent;
+    color: rgb(250, 248, 255);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: all 0.9s ease;
+    background-color: #f10ec0;
+}
+.btnl:hover{
+    
+    background-color: rgb(11, 208, 14);
+    border: 2px solid white;
+    color: #f7fbfc;
+    }
+    .btn{
+    border: 2px solid rgb(10, 10, 15);
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+    background-color: transparent;
+    color: rgb(250, 248, 255);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: all 0.9s ease;
+    background-color: #f10ec0;
+}
+.btn:hover{
+    
+    background-color: rgb(235, 67, 11);
+    border: 2px solid white;
+    color: #f7fbfc;
+    }
+  </style>
+  <body>
+    <div class="alert alert-primary" role="alert">
+  A simple primary alert—check it out!
+</div>
+    <div class="alert alert-primary" role="alert">
+    Little interest or pleasure in doing things
+      </div>
+      OPTION: <button class="btnl bt" data-aos="fade-down"
+                     data-aos-duration="500">yes</button>
+                     <button class="btn bt" data-aos="fade-down"
+                     data-aos-duration="500">no</button>
+                     <br>
+                     <br>
+
+      <div class="alert alert-secondary" role="alert">
+       Feeling down, depressed, or hopeless
+      </div>
+      OPTION: <button class="btnl bt" data-aos="fade-down"
+                     data-aos-duration="500">yes</button>
+                     <button class="btn bt" data-aos="fade-down"
+                     data-aos-duration="500">no</button>
+                     <br>
+                     <br>
+
+      <div class="alert alert-success" role="alert">
+        Feeling bad about yourself - or that you are a failure or have let yourself or your family down
+      </div>
+      OPTION: <button class="btnl bt" data-aos="fade-down"
+                     data-aos-duration="500">yes</button>
+                     <button class="btn bt" data-aos="fade-down"
+                     data-aos-duration="500">no</button>
+                     <br>
+                     <br>
+
+      <div class="alert alert-danger" role="alert">
+        Trouble falling or staying asleep, or sleeping too much
+      </div>
+      OPTION: <button class="btnl bt" data-aos="fade-down"
+                     data-aos-duration="500">yes</button>
+                     <button class="btn bt" data-aos="fade-down"
+                     data-aos-duration="500">no</button>
+                     <br>
+                     <br>
+
+      <div class="alert alert-warning" role="alert">
+        Moving or speaking so slowly that other people could have noticed
+      </div>
+      OPTION: <button class="btnl bt" data-aos="fade-down"
+                     data-aos-duration="500">yes</button>
+                     <button class="btn bt" data-aos="fade-down"
+                     data-aos-duration="500">no</button>
+                     <br>
+                     <br>
+                     <div class="container">
+                      <div class="bar one"></div>
+                      <div class="bar two"></div>
+                      <div class="bar three"></div>
+                      <ul class="v-meter">
+                        <li><div>100%</div></li>
+                        <li><div>80%</div></li>
+                        <li><div>60%</div></li>
+                        <li><div>40%</div></li>
+                        <li><div>20%</div></li>
+                        <li><div>10%</div></li>
+                        <li><div>0%</div></li>
+                      </ul>
+                     </div>
+
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
